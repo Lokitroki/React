@@ -1,0 +1,21 @@
+.header{
+    background-color: #134c8f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    width: auto;
+}
+.header .logo {
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.header .logo img {
+    transition: all 0.3s;
+    height: 40px;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}

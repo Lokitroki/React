@@ -1,0 +1,26 @@
+footer {
+    background-color: #134c8f;
+    height: 85px;
+    padding: 20px 500px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    overflow: hidden;
+}
+.socialMedia {
+    margin: 0px 240px;
+}
+
+.socialMedia a i {
+    margin-left: 10px;
+    color: white;
+    font-size: 36px;
+    transition: all 0.5s;
+}
+
+.socialMedia a i:hover {
+    color: black;
+    transform: scale(1.3);
+}
