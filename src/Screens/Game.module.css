@@ -17,8 +17,8 @@
     margin-bottom: 10px;
 }
 
-.content_txt ul li {
-    list-style: none;
+.content_txt tr td {
+    display: flex;
     margin-bottom: 10px;
 }
 .content_image {

@@ -1,6 +1,7 @@
 import React from 'react'
 import imagesGame from '../assets/imagesGame.jsx'
 import styles from './Game.module.css'
+import { Table } from 'react-bootstrap'
 
 const Game = () => {
   return (
@@ -12,13 +13,15 @@ const Game = () => {
       <div class={styles.content_txt}>
           <h2>Mantenimiento de los equipos y herramientas de extinción de incendios forestales.</h2>
           <p>En un campo de prácticas sumido en el desorden y la confusión tienes que encontrar tienes que encontrar y colocar las partes de los EPIs utilizados en la extinción de incendios forestales.</p>
-          <ul>
-            <li>Grado: Coordinación de emergencias y protección civil.</li>
-            <li>Asignatura: Gestión de recursos de emergencias y protección civil</li>
-            <li>Grado: Coordinación de emergencias y protección civil.</li>
-            <li>Duración aproximada: 10 minutos.</li>
-            <li>Duración aproximada: Fácil</li>
-          </ul>
+          <Table>
+            <tr>
+              <td>Grado: Coordinación de emergencias y protección civil.</td>
+              <td>Asignatura: Gestión de recursos de emergencias y protección civil</td>
+              <td>Unidad: Planificación y supervisión del mantenimiento de equipos, medios técnicos e instalaciones.</td>
+              <td>Duración aproximada: 10 minutos.</td>
+              <td>Dificultad: Fácil.</td>
+            </tr>
+          </Table>
         </div>
         <div class={styles.content_image}>
           <img src={imagesGame.a0}/>
