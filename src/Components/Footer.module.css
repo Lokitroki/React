@@ -1,7 +1,6 @@
 footer {
     background-color: #134c8f;
     height: 85px;
-    padding: 20px 500px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -10,17 +9,20 @@ footer {
     overflow: hidden;
 }
 .socialMedia {
-    margin: 0px 240px;
+    margin: 25px 750px;
 }
-
-.socialMedia a i {
+.socialMedia ul{
+    display: flex;
+}
+.socialMedia ul li{
+    list-style: none;
     margin-left: 10px;
     color: white;
     font-size: 36px;
     transition: all 0.5s;
+    cursor: pointer;
 }
-
-.socialMedia a i:hover {
+.socialMedia ul li:hover {
     color: black;
     transform: scale(1.3);
 }
