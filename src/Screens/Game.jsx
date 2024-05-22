@@ -1,9 +1,8 @@
 import React from 'react'
-import imagesGame from '../assets/imagesGame.jsx'
 import styles from './Game.module.css'
-import { Table } from 'react-bootstrap'
+import {Table} from 'react-bootstrap';
 
-const Game = () => {
+const Game = ({title, images}) => {
   return (
     <div>
       <div class={styles.iframeConteiner}>
@@ -11,7 +10,7 @@ const Game = () => {
       </div>
       <div className={styles.content}>
       <div class={styles.content_txt}>
-          <h2>Mantenimiento de los equipos y herramientas de extinción de incendios forestales.</h2>
+          <h2>{title}</h2>
           <p>En un campo de prácticas sumido en el desorden y la confusión tienes que encontrar tienes que encontrar y colocar las partes de los EPIs utilizados en la extinción de incendios forestales.</p>
           <Table>
             <tr>
@@ -24,11 +23,12 @@ const Game = () => {
           </Table>
         </div>
         <div class={styles.content_image}>
-          <img src={imagesGame.a0}/>
-          <img src={imagesGame.a1}/>
-          <img src={imagesGame.a2}/>
-          <img src={imagesGame.a3}/>
-          <img src={imagesGame.a4}/>
+          {images.map((image) => (
+                 <img
+                   src={image.path}
+                   alt=""
+               />
+              ))}
         </div>
       </div>
     </div>
