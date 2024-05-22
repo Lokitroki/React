@@ -10,8 +10,16 @@ footer {
 }
 .icons{
     margin-left: 20px;
+    transition: all 0.3s;
+}
+.icons:hover{
+    transform: scale(1.2);
 }
 .logoUniversae{
     padding-left: 15px;
     width: 80px;
+    transition: all 0.3s;
+}
+.logoUniversae:hover{
+    transform: scale(1.2);
 }
