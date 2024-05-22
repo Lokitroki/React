@@ -13,12 +13,12 @@ const NavBar = () => {
               <Navbar.Brand className={styles.logo}><a href="https://universae.com/" target="_blank"><img src={logo} alt="logo" /></a></Navbar.Brand>
               <Nav>
                 <Nav.Link className={styles.home} href="/">Home</Nav.Link>
-                <Nav.Link href="/Game0">Ascensor</Nav.Link>
-                <Nav.Link href="/Game1">Embarque</Nav.Link>
-                <Nav.Link href="/Game2">EPIS</Nav.Link>
-                <Nav.Link href="/Game3">Extincion</Nav.Link>
-                <Nav.Link href="/Game4">Helicoptero</Nav.Link>
-                <Nav.Link href="/Game5">Hemorragia</Nav.Link>
+                <Nav.Link className={styles.nav} href="/Game0">Ascensor</Nav.Link>
+                <Nav.Link className={styles.nav} href="/Game1">Embarque</Nav.Link>
+                <Nav.Link className={styles.nav} href="/Game2">EPIS</Nav.Link>
+                <Nav.Link className={styles.nav} href="/Game3">Extincion</Nav.Link>
+                <Nav.Link className={styles.nav} href="/Game4">Helicoptero</Nav.Link>
+                <Nav.Link className={styles.nav} href="/Game5">Hemorragia</Nav.Link>
               </Nav>
             </Container>
           </Navbar>
