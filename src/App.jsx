@@ -5,6 +5,8 @@ import Section from './Components/Section'
 import Footer from './Components/Footer'
 import Game from './Screens/Game'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import NavBar from './Components/NavBar'
 import {imagesGame0, imagesGame1,  imagesGame2, imagesGame3, imagesGame4, imagesGame5} from './assets/imagesGame'
 
 
@@ -14,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header/>
+        <NavBar/>
         <Routes>
           <Route path='/' element={<Section/>}/>
           <Route path='/Game0' element={<Game title="Rescate en ascensor" images={imagesGame0}/>}/>

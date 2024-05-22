@@ -1,0 +1,24 @@
+.navBar{
+    background-color: #134c8f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    width: auto;
+}
+.logo {
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.logo img {
+    transition: all 0.3s;
+    height: 40px;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+}
+.home{
+    margin-right: 400px;
+}
