@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import Header from './Components/Header'
 import Section from './Components/Section'
 import Footer from './Components/Footer'
 import Game from './Screens/Game'
@@ -8,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import NavBar from './Components/NavBar'
 import {imagesGame0, imagesGame1,  imagesGame2, imagesGame3, imagesGame4, imagesGame5} from './assets/imagesGame'
+
 
 
 function App() {
