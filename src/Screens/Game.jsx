@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Game.module.css'
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import Carousel from 'react-bootstrap/Carousel';
 
 const Game = ({title, images}) => {
   return (
@@ -22,14 +23,13 @@ const Game = ({title, images}) => {
           <Card.Link href="#">Juego anterior</Card.Link>
           <Card.Link href="#">Juego Siguiente</Card.Link>
         </Card.Body>
-        <div class={styles.content_image}>
-          {images.map((image) => (
-                 <img
-                   src={image.path}
-                   alt=""
-               />
-              ))}
-        </div>
+        <Carousel className={styles.carousel}>
+        {images.map((image, index) => (
+          <Carousel.Item key={index}>
+            <img src={image.path} alt={`Imagen ${index + 1}`} />
+          </Carousel.Item>
+        ))}
+        </Carousel>
       </Card>
     </div>
   )
