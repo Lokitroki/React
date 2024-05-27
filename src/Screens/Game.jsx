@@ -3,6 +3,7 @@ import styles from './Game.module.css'
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Carousel from 'react-bootstrap/Carousel';
+import NavigationButtons from '../Components/NavigationButtons';
 
 const Game = ({title, images}) => {
   return (
@@ -19,10 +20,6 @@ const Game = ({title, images}) => {
           <ListGroup.Item>Duración aproximada: 10 minutos.</ListGroup.Item>
           <ListGroup.Item>Dificultad: Fácil.</ListGroup.Item>
         </ListGroup>
-        <Card.Body>
-          <Card.Link href="#">Juego anterior</Card.Link>
-          <Card.Link href="#">Juego Siguiente</Card.Link>
-        </Card.Body>
         <Carousel className={styles.carousel}>
         {images.map((image, index) => (
           <Carousel.Item key={index}>
@@ -30,6 +27,9 @@ const Game = ({title, images}) => {
           </Carousel.Item>
         ))}
         </Carousel>
+        <Card.Body>
+          <NavigationButtons/>
+        </Card.Body>
       </Card>
     </div>
   )
